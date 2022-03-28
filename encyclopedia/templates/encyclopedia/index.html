@@ -1,6 +1,6 @@
 {% extends "encyclopedia/layout.html" %} {% block title %} Encyclopedia
-{%endblock %} {% block body %} {% if entries %}
-<h2>Search Results For {{value}}</h2>
+{%endblock %} {% block body %} {% if search %}
+<h2>Searching for {{value}}</h2>
 {% else %}
 <h1>All Pages</h1>
 {% endif %}
