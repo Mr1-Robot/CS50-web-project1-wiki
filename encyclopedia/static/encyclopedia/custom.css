@@ -1,0 +1,11 @@
+body {
+  overflow-x: hidden;
+}
+
+.sidebar {
+  padding-left: 2rem;
+}
+
+.sidebar div {
+  margin-top: 0.2rem;
+}

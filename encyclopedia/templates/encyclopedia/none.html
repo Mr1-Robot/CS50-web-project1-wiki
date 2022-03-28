@@ -1,0 +1,8 @@
+{% extends "encyclopedia/layout.html" %} {% block title %} {{ entry_title }}
+{%endblock %} {%block body %}
+
+<h2>{{entry_title}}?</h2>
+<h5>There is no entry with this name {{entry_title}}</h5>
+
+<p>If you want to add a new page <a class="alert-link" href="{% url "NewEntry" %}">Click here</a></p>
+{%endblock%}
