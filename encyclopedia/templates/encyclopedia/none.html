@@ -1,8 +1,13 @@
 {% extends "encyclopedia/layout.html" %} {% block title %} {{ entry_title }}
 {%endblock %} {%block body %}
 
-<h2>{{entry_title}}?</h2>
+<div style="display: flex; flex-direction: column; align-items:center;">
+    
+<h1 style="text-align:center; margin:2rem 0">Not Found-404-</h1>
+<h2>{{entry_title}}</h2>
 <h5>There is no entry with this name {{entry_title}}</h5>
 
-<p>If you want to add a new page <a class="alert-link" href="{% url "NewEntry" %}">Click here</a></p>
+<p class="alert alert-primary" style="width:fit-content; padding:0 1rem;">If you want to add a new page <a class="alert-link" href="{% url "NewEntry" %}">Click here</a></p>
+</div>
+
 {%endblock%}
